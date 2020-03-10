@@ -2,8 +2,8 @@
 
 ## Register
 
-- [х] [Github](https://github.com/)
-- [х] [Figma](https://www.figma.com)
+- [x] [Github](https://github.com/)
+- [x] [Figma](https://www.figma.com)
 - [ ] [Codewars](https://www.codewars.com/)
 
 ## Sandbox
@@ -13,12 +13,12 @@
 
 ## Editor
 
-- [х] [Visual Studio Code](https://code.visualstudio.com/)
+- [x] [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Install
 
-- [ ] [NodeJS](https://nodejs.org/uk/)
-- [х] [Git](https://git-scm.com/downloads)
+- [x] [NodeJS](https://nodejs.org/uk/)
+- [x] [Git](https://git-scm.com/downloads)
 
 ## Start learning git
 
