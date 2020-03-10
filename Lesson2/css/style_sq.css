@@ -1,0 +1,59 @@
+table {
+    
+    border: 2px solid #000;
+    border-collapse: collapse;
+   width: 280px; 
+   height: 280px; 
+}
+
+td {
+    border: 2px solid black;
+    width: 10px;
+    height: 10px;
+    font-size: 18pt;
+    text-align: center;
+}
+tr {
+    height: 10px;
+
+    
+    
+}
+
+/*tr:nth-child(22) td:nth-child(-n+17) 
+{
+    color: #ffa600;
+    background: #ffa600;
+    border-color: #ffa600;
+    border-top-color: #ffa600;
+    border-left-color: black;
+
+
+}*/
+.yellow
+{
+    background: #ffa600;
+    border-color: black;
+    
+}
+
+.red
+{
+    background: red;
+    border-color:black;
+}
+
+.black
+{
+    background: black;
+    border-color: black;
+    color: white;
+}
+
+.brown
+{
+    background: rgb(175, 54, 70);
+    border-color: black;
+    
+
+}
