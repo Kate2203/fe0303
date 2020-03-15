@@ -37,3 +37,21 @@ tr:nth-child(10) td:nth-child(2)
     background: currentColor;
     border-color: currentColor;
 }
+<<<<<<< HEAD
+tr:nth-child(10) td:nth-child(3),
+tr:nth-child(11) td:nth-child(1),
+tr:nth-child(11) td:nth-child(-n + 3)
+{
+    color: orange;
+    background: currentColor;
+    border-color: currentColor;
+}
+
+[colspan="3"][rowspan="3"]
+{
+    color: red;
+    background: currentColor;
+    border-color: currentColor;
+}
+=======
+>>>>>>> 975b4be378ed72a3b86623a4553a9a3ea5fdaa25
