@@ -8,14 +8,31 @@
         *
         {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
         }
 
-        .container
+
+        .container-1
         {
             display: flex;
             flex-direction: row;
             align-items: stretch;
             width: 100%;
+        }
+
+        .container-2
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            width: 100%;
+            min-height: 100%;
+           
+            
         }
 
         .logo
@@ -68,6 +85,7 @@
 
             display: flex;
             flex-direction: row;
+            
         }
 
         .news
@@ -96,7 +114,6 @@
         .footer
         {
             flex: 0 0 100px;
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -126,7 +143,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container-1">
         <div class="logo">
             Logo
         </div>
@@ -134,7 +151,7 @@
             Menu
         </div>
     </div>
-    <div class="container">
+    <div class="container-2">
         <div class="square">
             <div class="wrapper">
                 <div class="news">
