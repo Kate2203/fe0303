@@ -9,7 +9,6 @@
     <style>
         .block {
             margin-bottom: 10px;
-            display: flex;
         }
 
         .block > div {
@@ -37,178 +36,105 @@
         }
 /* не получилось задать свойство all elements width: 50% первому и второму блоку- если задаю width 50%, 
 то в медиа-запросах все изменения происходят с учетом 50% пространства   */
-        .first, .second
+        * 
         {
-            
-            flex-wrap: wrap;
-            flex-grow: 1; 
-           /* flex-basis: 40%;*/
-            width: 50%;
-        
+            box-sizing: border-box;
         }
-       @media (min-width: 768px)
+        .first 
         {
-            .block
-                {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .first .colored
+        {
+            flex-basis: 50%;            
+        }
+        .second 
+        {
+            display: flex;
+        }
+        .second .colored
+        {
+            flex: 1 0 0;
+        }
+        @media (min-width: 768px)
+        {
+            .fourth, .fifth 
+            {
                 display: flex;
-                flex-grow: 1;
-                flex-shrink: 0;
-                flex-basis: 0;
                 flex-wrap: wrap;
+            }
+            .fourth .colored 
+            {
+                flex: 1 0 50%;
+            }
+            .fifth .colored
+            {
+                flex: 1 0 50%;
+            }
+        }
             
-                }
-
-            .fourth > div:nth-child(1),
-            .fourth > div:nth-child(2)
-                {
-                width: 50%;
-                }
-            
-                .fifth > div
-                {
-            
-                flex-wrap: wrap;
-                flex-grow: 1;
-                flex-basis: 40%;
-                flex-direction: row;
-                
-                }
          @media (min-width: 960px)
             {
-                .block
-                {
+            .third
+            {
                 display: flex;
-                flex-grow: 1;
-                flex-shrink: 0;
-                flex-basis: 0;
-                flex-wrap: wrap;
-            
-                }
-                .first, .second 
-                {
-                width: 100%;
-                }
-                .first > div
-                {
-            
-                flex-wrap: wrap;
-                flex-grow: 1;
-                flex-basis: 40%;
-                flex-direction: row;
-                
-            
-                }   
-                .second > div
-                {
-                flex-grow: 1;
-                flex-wrap: wrap; 
-                flex-basis: 40%;
-                flex-direction: row;
-                }
-                .third > div
-                {
-                flex-grow: 1;
-                flex-wrap: wrap; 
-                flex-basis: 33%;
-                flex-direction: row;
-                }
-
-            /* не получилось задать 35% 30% 35% в строку*/
-               .fourth > div
-                {
-                flex-grow: 0; 
-                flex-wrap: nowrap;
-
-               
-                }
-
-                .fourth > div:nth-child(1),
-                .fourth > div:nth-child(3)
-                {
-                    width: 35%;
-                }
-                 .fourth > div:nth-child(2)
-                {
-                    width: 30%;
-                }
             }
+            .third .colored 
+            {
+                flex: 1 0 0;
+            }
+            .fourth .colored 
+            {
+                flex: 0 0 30%;
+            }
+            .fourth .colored:not(:nth-child(2))
+            {
+                flex-grow: 1;
+            }
+
             @media (min-width: 1200px)
             {
-                .block
+                .third 
                 {
-                display: flex;
-                flex-grow: 1;
-                flex-shrink: 0;
-                flex-basis: 0;
-                flex-wrap: wrap;
-                }   
-                .third > div
+                    flex-wrap: wrap;
+                }
+                .third .colored 
                 {
-                flex-grow: 1;
-                flex-wrap: wrap; 
-                flex-basis: 40%;
-                flex-direction: row;
-                } 
-                .fifth > div
+                    flex: 1 0 50%;
+                }
+                .fifth 
                 {
-                flex-grow: 1;
-                flex-wrap: wrap; 
-                flex-basis: 33%;
-                flex-direction: row;
-                justify-content: center;
-                } 
-                /* не получилось задать 35% 30% 35% в строку*/
-                .fourth > div
+                    justify-content: center;
+                }
+                .fifth .colored 
                 {
-                flex-grow: 0; 
-                flex-wrap: wrap; 
-                flex-basis: 33%;
-                flex-direction: row;
+                    flex: 0 0 33%;
                 }
             }
             @media (min-width: 1800px)
             {
-                .block
+                .first .colored 
                 {
-                display: flex;
-                flex-grow: 1;
-                flex-shrink: 0;
-                flex-basis: 0;
-                flex-wrap: wrap;
-                } 
-                .first > div
+                    flex: 1 0 0;
+                }
+                .third .colored
                 {
-            
-                
-                flex-grow: 1;
-                flex-basis: 23%;
-                flex-direction: row;
-                } 
-                .third > div
+                    flex: 0 0 25%;
+                }
+                .fourth .colored 
                 {
-                flex-grow: 0; 
-                flex-basis: 25%;
-                flex-direction: row;
-                } 
-                /* задать 25% 25% 50% не получается
-                .fourth > div
+                    flex: 1 0 0;
+                }
+                .fourth .colored:last-child
                 {
-                flex-grow: 0; 
-                flex-wrap: wrap; 
-                flex-basis: 33%;
-                flex-direction: row;
-                }*/
-
-                .fifth > div
+                    flex-grow: 2;
+                }
+                .fifth .colored
                 {
-                flex-grow: 1;
-                flex-basis: 19%;
-                flex-direction: row;
-            
-                } 
-
-            }
-        }
+                    flex: 1 0 0;
+                }
+            } 
     </style>
 </head>
 <body>
