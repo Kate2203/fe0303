@@ -5,3 +5,16 @@
 
 // (*) Напишите функцию, которая будет решать эту задачу в общем виде, для любых (speed, slowdown, mine),
 // где mine - это высота шахты, speed - скорость таракана за час, slowdown - расстояние падения из-за усталости
+
+let mine = prompt ('Введите расстояние до соседей');
+let speed = prompt ('Введите скорость таракана');
+let slowdown = prompt ('Введите падучесть таракана');
+
+function cockroach(mine, speed, slowdown){
+    coco=speed * mine / slowdown;
+    return coco;
+    
+}
+console.log (cockroach(mine, speed, slowdown));
+alert('Времени,чтоб добежать до магазина с ловушками осталось: ' + cockroach(mine, speed, slowdown) + ' часов');
+

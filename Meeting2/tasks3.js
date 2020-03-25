@@ -4,26 +4,38 @@
 // 4. В первых трех задачах добавить пользователю возможность ввести значения переменных.
 // 5. Выводить в консоль простые числа от 1 до n до тех пор, пока пользователь не скажет хватить.
 
+let n = prompt('Enter number for task 1');
+
 function task1( n ) {
-    let i = 1;
+   // let i = 1;
 
-    while (i<=n) {
-        console.log(i);
+   // while (i<=n) {
+     //   console.log(i);
 
-        i++; // i = i + 1;
-    }
-}
-
-// task1(5);
-// task1(10);
-
-function isSimple( n ) {
-    for (let k = 2; k < n ; k++) {
-        if (n % k === 0) {
-            return false;
+   //     i++; // i = i + 1;}
+        for (let i=1; i<=n; i++) {
+            console.log(i);
         }
     }
+task1(n);
+// task1(10);
 
+function isSimple( a ) {
+ //   for (let k = 2; k < a ; k++) {
+        
+ //       if (a % k === 0) {
+ //          return false;
+ //       }
+  //  }
+
+  //  return true;
+    let k = 2;
+    while ( k < a ) {
+        if ( a % k ===0) {
+            return false;
+        } 
+    k++;
+  }
     return true;
 }
 
@@ -34,30 +46,45 @@ function isSimple( n ) {
 //     m++;
 // } while(m < 15);
 
-function getSimple(n) {
-    let m = 1;
+let a = prompt('Enter number for task2');
+function getSimple(a) {
+ //   let m = 1;
 
-    do {
+ //   do {
+ //       if (isSimple(m)) {
+ //           console.log(m);
+    //      }
+
+ //       m++;
+ //   } while (m <= a);
+    for (let m=1; m<=a; m++) {
         if (isSimple(m)) {
             console.log(m);
         }
-
-        m++;
-    } while (m <= n);
-}
-
-// getSimple(13);
-
-function getNumbersDeletedBy(n, k) {
-    let m = 1;
-
-    while (m <= n) {
-        if (m % k === 0) {
-            console.log(m);
-        }
-
-        m++;
+    m++;
     }
 }
+getSimple(a);
 
-getNumbersDeletedBy(100, 5);
+let p = prompt('Введите число для task3');
+let k = prompt('Введите второе число, меньше первого для task3');
+function getNumbersDeletedBy(p, k) {
+    let m = 1;
+
+   // while (m <= p) {
+   //     if (m % k === 0) {
+   //         console.log(m);
+   //     }
+
+   //     m++;
+   // }
+   do {
+    if (m % k === 0) {
+        console.log(m);
+        }
+    m++;
+    }
+    while (m <=p);
+}
+
+getNumbersDeletedBy(p, k);
