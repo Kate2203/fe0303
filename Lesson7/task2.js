@@ -39,6 +39,20 @@ function getLeader( grade ) {
     return leaderName;
 }
 
+function getLeaderScore( grade ) {
+    let leaderName = '',
+        leaderScore = -Infinity;
+
+    for (const name in grade) {
+        if (grade[name] > leaderScore) {
+            leaderName = name;
+            leaderScore = grade[name];
+        }
+    }
+
+    return leaderScore;
+}
+
 function getAverageGrade( grade ) {
     let sum = 0,
         count = 0;
@@ -85,8 +99,26 @@ function getLagging( grade ) {
             return grade[name1] - grade[name2];
         });
 }
+function getMaxRate( grade ) {
+    const gamerNames = Object.keys(grade)
+
+   // .sort((name1, name2) => grade[name2] - grade[name1]);
+  //  gamerNames.length = 3;
+  //  return gamerNames;
+
+    
+       
+       .sort(function(name1, name2) {
+        return grade[name2] - grade[name1];
+      });
+      gamerNames.length = 3;
+      return gamerNames;
+        
+}
 
 console.log('1. Leader:', getLeader(grade));
+console.log('2. LeaderScore:', getLeaderScore(grade));
 console.log('3. Average Grade:', getAverageGrade(grade));
 console.log('4. Average Gamer:', getAverageGamer(grade));
 console.log('5. Lagging Gamer:', getLagging(grade));
+console.log('6. getMaxRate:', getMaxRate(grade));
