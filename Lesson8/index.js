@@ -12,9 +12,18 @@ console.log( $ticket );
 console.dir( $ticket );
 
 function formatPrice(num) {
-    const str = 'hello';
-
-    return str;
+    const str = ' ';
+  //  let newString = '';
+  //  if num.length= 4 {
+  //      newString= num.slice (0,1) + ' ' + num.slice(2);
+   // }
+  //  if num.length= 5 {
+  //      newString= num.slice (0,2) + ' ' + num.slice(3);
+  //  }
+  //  if num.length= 6 {
+ //       newString= num.slice (0,3) + ' ' + num.slice(4);
+  //  }
+    return newString;
 }
 
 console.log( '1', formatPrice(99) === '99', formatPrice(99) );
