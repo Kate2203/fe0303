@@ -11,8 +11,8 @@
 
 Дополнительно:
 
-- [ ] [Closures and Scopes](https://www.codewars.com/kata/closures-and-scopes)
-- [ ] [Can you keep a secret?](https://www.codewars.com/kata/can-you-keep-a-secret)
+- [x] [Closures and Scopes](https://www.codewars.com/kata/closures-and-scopes)
+- [x] [Can you keep a secret?](https://www.codewars.com/kata/reviews/54011e8a9928b8d22d000029/groups/59efa99646243428ec000063)
 - [ ] [Lazily executing a function](https://www.codewars.com/kata/lazily-executing-a-function)
-- [ ] [Basic JS - Calculating averages](https://www.codewars.com/kata/basic-js-calculating-averages)
+- [x] [Basic JS - Calculating averages](https://www.codewars.com/kata/basic-js-calculating-averages)
 - [ ] [Gradually Adding Parameters](https://www.codewars.com/kata/gradually-adding-parameters)

@@ -46,3 +46,25 @@ const ANCESTRY_DATA = [
     {"name": "Maria Sturm", "sex": "f", "born": 1835, "died": 1917, "father": "Charles Sturm", "mother": "Seraphina Spelier"},
     {"name": "Jacobus Bernardus van Brussel", "sex": "m", "born": 1736, "died": 1809, "father": "Jan van Brussel", "mother": "Elisabeth Haverbeke"}
   ];
+
+/*
+  function motherAge(ANCESTRY_DATA) {
+    let arrMotherAge=[];
+
+    for (let i=0; i<ANCESTRY_DATA.length; i++)
+  {
+    if (name[key] == mother[key]) {
+    return arrMotherAge=[i]; }
+    i++;
+   
+  }
+
+  }
+  motherAge(ANCESTRY_DATA); */
+
+  let age =[];
+  function agePerson() {
+    age = (ANCESTRY_DATA["died"] - ANCESTRY_DATA["born"]);
+    return age; 
+  }
+  console.log(age);
