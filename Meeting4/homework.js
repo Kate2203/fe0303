@@ -1,6 +1,12 @@
 // Метод every() проверяет, удовлетворяют ли все элементы массива условию, заданному в передаваемой функции.
 function every(arr, condition) {
-
+for (let i=0; i<arr.length; i++)
+{
+    if (i===condition) {
+        i++
+    }
+    else return false;
+}
 }
 
 console.log( every([1, 2, 3, 4, 5], function(el) { return el < 3; }) ); // false

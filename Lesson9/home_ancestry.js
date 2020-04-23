@@ -75,15 +75,15 @@ function getCentury ( data ) {
     console.log (century);
 }
 
-//function task4 ( data ) {
-   //const centuryPeople = data.map (people => getCentury(people, data));
-   //console.log (centuryPeople);
-//}
+function task4 ( data ) {
+   const centuryPeople = data.map (people => getCentury(data));
+   console.log (centuryPeople);
+}
 console.log(task1 (ANCESTRY_DATA )); //18.166666666666668
 console.log(task2 (ANCESTRY_DATA )); //13.5
 console.log(task3(ANCESTRY_DATA)); //1.5555555555555556
 getCentury(ANCESTRY_DATA);
-//task4(ANCESTRY_DATA);
+task4(ANCESTRY_DATA);
 //console.log(getParents(ANCESTRY_DATA[0], ANCESTRY_DATA));
 //console.log(getAgeDiffBetweenMother(ANCESTRY_DATA[0], ANCESTRY_DATA ));
 //console.log(getAge(ANCESTRY_DATA[0]));
